@@ -1,0 +1,28 @@
+{
+  "author": "Coupy",
+  "content_scripts": [
+    {
+      "matches": ["*://stay.dimigo.me/*"],
+      "all_frames": true,
+      "js": ["js/content.js"]
+    }
+  ],
+  "description": "30분만에 만듦",
+  "icons": {
+    "16": "contents/icon16.png",
+    "32": "contents/icon32.png",
+    "48": "contents/icon48.png",
+    "64": "contents/icon64.png",
+    "128": "contents/icon128.png"
+  },
+  "manifest_version": 3,
+  "name": "Dimigo Stay Name",
+  "permissions": ["tabs", "activeTab"],
+  "version": "1.0",
+  "web_accessible_resources": [
+    {
+      "resources": ["js/*.js"],
+      "matches": ["*://stay.dimigo.me/*"]
+    }
+  ]
+}
